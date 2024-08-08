@@ -12,17 +12,17 @@ const Footer = () => {
           <ul className='footer-text'>
             <li>Coimbatore</li>
             <li>Kovaipudur</li>
-            <li>block 10,Ayyappan kovil street</li>
+            <li>Ayyappan kovil street</li>
           </ul>
         </div>
 
         <div className="col2">
           <h3 className='footer-title'><span class="underline">TRAINERS</span></h3>
           <ul className='footer-text'>
-            <li><a href="/home">RISHI</a></li>
-            <li><a href="/contact">NATUDURAI</a></li>
-            <li><a href="/contact">STALIN</a></li>
-            <li><a href="/contact">PRADHEESH</a></li>
+            <li><a href="/home">Dharshan</a></li>
+            <li><a href="/contact">Thivin</a></li>
+            <li><a href="/contact">Shri shabareesh</a></li>
+            <li><a href="/contact">Sathyanarayanan</a></li>
           </ul>
         </div>
       </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="col4">
           <h3 className='footer-title'><span class="underline">Contact</span></h3>
           <ul className='footer-text'>
-            <li>+91 93423 45678</li>
+            <li>+91 8300570566</li>
           </ul>
         </div>
       </div>

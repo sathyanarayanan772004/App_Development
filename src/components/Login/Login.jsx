@@ -10,11 +10,23 @@ const Log = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    const users = [
+      { username: 'user1@gmail.com', password: 'user123', dashboard: '/Pages/Profile' },
+      { username: 'user2@gmail.com', password: 'user234', dashboard: '/user2-dashboard' }
+      // Add more user objects as needed
+    ];
+
     if (username === 'admin@gmail.com' && password === 'admin123') {
       navigate('/admin-dashboard'); // Redirect to admin dashboard
     } else {
-      console.log('Invalid login credentials');
-      // Handle invalid credentials (e.g., show an error message)
+      const user = users.find(u => u.username === username && u.password === password);
+      if (user) {
+        navigate(user.dashboard); // Redirect to user-specific dashboard
+      } else {
+        console.log('Invalid login credentials');
+        // Handle invalid credentials (e.g., show an error message)
+      }
     }
   };
 
@@ -26,12 +38,12 @@ const Log = () => {
           <div className='input-box'>
             <input
               type='text'
-              placeholder='email'
+              placeholder='Email'
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
             />
-            <FaUser className='icone'/>
+            <FaUser className='icone' />
           </div>
           <div className='input-box'>
             <input
@@ -41,12 +53,12 @@ const Log = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <FaLock className='icone'/>
+            <FaLock className='icone' />
           </div>
           <div className='forgot'>
             <a href='#'>Forgot Password</a>
           </div>
-          <button className='submit'  type='submit'>Login</button>
+          <button className='submit' type='submit'>Login</button>
           <div className='register'>
             <p>Don't have an account? <a href='/signup'>Register</a></p>
           </div>

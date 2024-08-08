@@ -78,11 +78,11 @@ function AdminDashboard() {
             <Typography variant="h4" gutterBottom>My Profile</Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
               <Avatar sx={{ width: 80, height: 80, mr: 3 }}>T</Avatar>
-              <Box>
+              <Box container>
                 <Typography variant="h6">Name: Toji</Typography>
-                <Typography variant="body1">Email: admin@example.com</Typography>
+                <Typography variant="body1">Email: admin@gmail.com</Typography>
                 <Typography variant="body1">Role: Admin</Typography>
-                <Typography variant="body1">Last Login: July 28, 2024</Typography>
+                <Typography variant="body1">Last Login: Aug 2, 2024</Typography>
               </Box>
             </Box>
           </>
